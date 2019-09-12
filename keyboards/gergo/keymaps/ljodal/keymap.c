@@ -13,6 +13,8 @@
 #define SYMB 1 // symbols
 #define NUMB 2 // numbers/motion
 
+#define KC_DQUOT LSFT(KC_2)
+
 // Blank template at the bottom
 
 enum customKeycodes {
@@ -26,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-------------------------------------------.                         ,-------------------------------------------.
  * |  TAB   |   Q  |   W  |   E  |   R  |   T  |                         |   Y  |   U  |   I  |   O  |   P  |   Å    |
  * |--------+------+------+------+------+------|------.           .------|------+------+------+------+------+--------|
- * |  ESC   |   A  |   S  |  D   |   F  |   G  |      |           |      |   H  |   J  |   K  |   L  |   Ø  |   Æ    |
+ * |  ESC   |   A  |   S  |  D   |   F  |   G  |  '   |           |  "   |   H  |   J  |   K  |   L  |   Ø  |   Æ    |
  * |--------+------+------+------+------+------|------|           |------|------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |      |           |      |   N  |   M  | ,  ; | . :  | - _  |  @ *   |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
@@ -34,7 +36,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                     |  LALT  |   |  CMD  |                                  |  TAB  |   | BKSP |
  *                     '--------'   '-------'                                  '-------'   '------'
  *                                        ,-------.                      ,-------.
- *                                        |       |                      |       |
+ *                                        | LCtrl |                      |       |
  *                                ,-------|-------|                      |-------|-------.
  *                                | SYMB  | NUMB  |                      | SYMB  | NUMB  |
  *                                | Space | Enter |                      | Enter | Space |
@@ -43,9 +45,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [BASE] = LAYOUT_gergo(
     KC_TAB,    KC_Q,  KC_W,   KC_E,   KC_R, KC_T,                                          KC_Y,    KC_U, KC_I, KC_O,   KC_P,    NO_AA,
-    KC_ESC,    KC_A,  KC_S,   KC_D,   KC_F, KC_G, KC_TRNS,                       KC_TRNS,  KC_H,    KC_J, KC_K, KC_L,   NO_OSLH, NO_AE,
-    KC_RSFT,   KC_Z,  KC_X,   KC_C,   KC_V, KC_B, KC_TRNS, KC_TRNS,     KC_TRNS, KC_BSPC,  KC_N, KC_M, KC_COMM, KC_DOT, NO_MINS, NO_AT_MAC,
-  MOD_LALT, MOD_LGUI, LT(SYMB, KC_SPC), LT(NUMB, KC_ENT),    LT(SYMB, KC_ENT), LT(NUMB, KC_SPC), KC_TAB, KC_BSPC
+    KC_ESC,    KC_A,  KC_S,   KC_D,   KC_F, KC_G, NO_APOS_MAC,                   KC_DQUOT, KC_H,    KC_J, KC_K, KC_L,   NO_OSLH, NO_AE,
+    KC_RSFT,   KC_Z,  KC_X,   KC_C,   KC_V, KC_B, KC_TRNS, MOD_LCTL,    KC_TRNS, KC_TRNS,  KC_N, KC_M, KC_COMM, KC_DOT, NO_MINS, NO_AT_MAC,
+             MOD_LALT, MOD_LGUI, LT(SYMB, KC_SPC), LT(NUMB, KC_ENT),    LT(SYMB, KC_ENT), LT(NUMB, KC_SPC), KC_TAB, KC_BSPC
     ),
 /* Keymap 1: Symbols layer
  *
