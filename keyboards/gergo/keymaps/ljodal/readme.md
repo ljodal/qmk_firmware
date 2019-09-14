@@ -10,7 +10,7 @@ MacOS keyboard layout.
 <img width="1081" alt="Layer 1" src="https://user-images.githubusercontent.com/544451/64912484-68503600-d730-11e9-8b5c-72cbe6f041a0.png">
 
 ### Layer 2 (symbols)
-<img width="1082" alt="Layer 2" src="https://user-images.githubusercontent.com/544451/64912485-68503600-d730-11e9-8733-c851bdc68612.png">
+<img width="1082" alt="Layer 2" src="https://user-images.githubusercontent.com/544451/64912680-dbf34280-d732-11e9-9835-5bfc024280a6.png">
 
 ### Layer 3 (numbers)
 <img width="1082" alt="Layer 3" src="https://user-images.githubusercontent.com/544451/64912573-b0bc2380-d731-11e9-8752-23cd6ec5be8a.png">
