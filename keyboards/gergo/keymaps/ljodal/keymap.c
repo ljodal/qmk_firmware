@@ -74,16 +74,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TRNS, NO_EXLM, NO_AT_MAC,  NO_LCBR_MAC, NO_RCBR_MAC, NO_PIPE,                                            KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, NO_BSLS_MAC,
     KC_TRNS, NO_HASH, NO_DLR_MAC, NO_LPRN,     NO_RPRN,     NO_GRV,  KC_TRNS,                          KC_TRNS, NO_PLUS, NO_MINS, NO_SLSH, NO_ASTR, NO_PERC, NO_QUOT,
     KC_TRNS, NO_PERC, NO_CIRC,    NO_LBRC,     NO_RBRC,     NO_TILD, KC_TRNS, KC_TRNS,        KC_TRNS, KC_TRNS, NO_AMPR, NO_EQL,  KC_COMM, KC_DOT,  NO_SLSH, NO_MINS,
-                                              KC_TRNS,     KC_TRNS, NO_SCLN, NO_EQL,         NO_EQL,  NO_SCLN, KC_PGUP, KC_DEL
+                                               KC_TRNS,     KC_TRNS, NO_SCLN, NO_EQL,         NO_EQL,  NO_SCLN, KC_PGUP, KC_DEL
     ),
 /* Keymap 2: Pad/Function layer
  *
  * .-------------------------------------------.                         .-------------------------------------------.
  * |        |   1  |  2   |  3   |  4   |  5   |                         |  6   |  7   |  8   |  9   |  0   |        |
  * |--------+------+------+------+------+------+------.           .------+------+------+------+------+------+--------|
- * |  F1    |  F2  | F3   | F4   | F5   | F6   | BTN1 |           |      | LEFT | DOWN |  UP  | RIGHT|VolDn | VolUp  |
+ * |        |  F1  | F2   | F3   | F4   | F5   | F6   |           |      | LEFT | DOWN |  UP  | RIGHT|VolDn | VolUp  |
  * |--------+------+------+------+------+------+------|           |------+------+------+------+------+------+--------|
- * |  F7    |  F8  | F9   | F10  | F11  | F12  | BTN2 |           |      | MLFT | MDWN | MUP  | MRGHT|Ply/Pa|  Skip  |
+ * |        |  F7  | F8   | F9   | F10  | F11  | B12  |           |      | MLFT | MDWN | MUP  | MRGHT|Ply/Pa|  Skip  |
  * '--------+------+------+------+------+------+------'           '------+------+------+------+------+------+--------'
  *                        .------.   .------.                               .------.   .------.
  *                        |      |   |      |                               |      |   |      |
