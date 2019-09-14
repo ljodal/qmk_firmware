@@ -13,7 +13,7 @@ MacOS keyboard layout.
 <img width="1082" alt="Layer 2" src="https://user-images.githubusercontent.com/544451/64912485-68503600-d730-11e9-8733-c851bdc68612.png">
 
 ### Layer 3 (numbers)
-<img width="1082" alt="Layer 3" src="https://user-images.githubusercontent.com/544451/64912486-68503600-d730-11e9-98d3-57f3a41430d1.png">
+<img width="1082" alt="Layer 3" src="https://user-images.githubusercontent.com/544451/64912573-b0bc2380-d731-11e9-8752-23cd6ec5be8a.png">
 
 ## Firmware building
 
