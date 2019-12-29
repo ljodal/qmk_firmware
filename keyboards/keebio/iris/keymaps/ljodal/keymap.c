@@ -67,9 +67,9 @@ static void process_QUOTE(keyrecord_t *record) {
         // anything.
         if (quote_kc_sent != KC_NO) return;
 
-        // SEND NO_PIPE which is the ' key on Norwegian Mac keyboards, but if
-        // shift is pressed send NO_2 instead, which is where " is placed.
-        quote_kc_sent = keyboard_report->mods & MOD_BIT(KC_LSFT) ? KC_2 : NO_PIPE;
+        // Normally send NO_APOS_MAC which is the '§ key on Norwegian Mac keyboards,
+        // but if shift is pressed send NO_2 instead, which is where " is placed.
+        quote_kc_sent = keyboard_report->mods & MOD_BIT(KC_LSFT) ? KC_2 : NO_APOS_MAC;
         register_code(quote_kc_sent);
     } else {
         // If the quote_kc_sent variable is KC_NO this means that we have not
